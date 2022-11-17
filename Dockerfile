@@ -7,7 +7,7 @@ LABEL maintainer=${MAINTAINER}
 ENV TZ=${TZ}
 
 RUN apt-get update && apt-get install -y \
-    curl \
+    curl git ffmpeg \
     gnupg2 \
     tzdata && \
     rm -rf /var/lib/apt/lists/*
